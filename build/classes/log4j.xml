@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">  
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">  
+  <!-- [控制台STDOUT] -->  
+  <appender name="console-log" class="org.apache.log4j.ConsoleAppender">  
+     <param name="encoding" value="gbk" />  
+     <param name="target" value="System.out" />  
+     <layout class="org.apache.log4j.PatternLayout">  
+     <param name="ConversionPattern" value="%-5p %c{2} - %m%n" />  
+     </layout>  
+   </appender>  
+  
+   <!--系统日志-->  
+   <appender name="system-log"  
+		class="org.apache.log4j.RollingFileAppender">  
+     <param name="File" value="D:/javaee_workspace/baobaotao-spring/log/system.log" />  
+     <param name="encoding" value="gbk" />
+     <param name="BufferedIO" value="false" /> 
+     <param name="MaxFileSize" value="10MB" />
+     <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />  
+     <layout class="org.apache.log4j.PatternLayout">  
+    <param name="ConversionPattern" value="%d %-5p %c{2} - %m%n" />  
+     </layout>  
+   </appender>  
+  
+  
+   <!--每日日志-->  
+   <appender name="daily-log"  
+		class="org.apache.log4j.DailyRollingFileAppender">  
+	<!--配置日志路径  -->
+     <param name="File" value="D:/javaee_workspace/baobaotao-spring/log/daily-log/daily.log" />  
+     <param name="encoding" value="gbk" />
+     <param name="BufferedIO" value="false" />  
+     <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />  
+     <layout class="org.apache.log4j.PatternLayout">  
+    <param name="ConversionPattern" value="%d %-5p %c{2} - %m%n" />  
+     </layout>  
+   </appender>  
+
+   <!-- [控制台日志] -->  
+  <logger name="console-logger" additivity="false">  
+      <level value="info" />  
+      <appender-ref ref="console-log" />  
+   </logger>  
+  
+   <!-- [系统日志] -->  
+   <logger name="system-logger" additivity="false">  
+      <level value="info" />  
+      <appender-ref ref="system-log" />  
+   </logger>  
+
+   <!-- [每日日志] -->  
+   <logger name="daily-logger" additivity="false" >  
+      <level value="info" />  
+      <appender-ref ref="daily-log" />  
+   </logger>  
+  
+   <root>  <!--必须得且只能定义一个日志，至于作用还没弄清楚  -->
+       <level value="info" />  
+       <appender-ref ref="system-log" /> 
+       <!-- <appender-ref ref="daily-log" /> -->
+   </root>  
+</log4j:configuration>  
