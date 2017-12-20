@@ -1,0 +1,6 @@
+数据库信息：
+	数据库来源：mysql
+	版本：mysql-5.7.15-winx64
+web框架：
+	springMVC
+	版本：3.2.4

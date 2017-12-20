@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.multipart.MultipartHttpServletRequest;
-import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.baobaotao.domain.User;
@@ -55,16 +53,10 @@ public class LoginController{
 		return "register";
 	}
 	
-
 	@RequestMapping(value = "/my_login_register.create")
 	public ModelAndView my_login_register(HttpServletRequest request){
-		
-		CommonsMultipartResolver resolver = new CommonsMultipartResolver(request.getSession().getServletContext());
-		MultipartHttpServletRequest mr = resolver.resolveMultipart(request);
-		
-		System.out.println(mr.getParameter("ppp"));
-		return new ModelAndView("my_login_register");
-		/*String isLogoutFlag="";
+
+		String isLogoutFlag="";
 		if(null!=request.getParameter("isLogout")){
 			isLogoutFlag=request.getParameter("isLogout");
 		}
@@ -78,7 +70,7 @@ public class LoginController{
 			return new ModelAndView("my_login_register");
 		}else{//已登录，直接进入登录界面
 			return new ModelAndView("has_logined");
-		}*/
+		}
 	}
 	
 	@RequestMapping(value = "/registerProcess.create")
