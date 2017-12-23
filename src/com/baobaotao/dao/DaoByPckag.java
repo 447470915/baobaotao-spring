@@ -18,6 +18,11 @@ import org.springframework.stereotype.Repository;
 
 import com.mysql.jdbc.ResultSetMetaData;
 
+
+/**
+ * @author 史新峰
+ * @instructions 使用jdbcTemplate调用存储过程的方式来对数据库进行访问。
+ */
 @Repository
 public class DaoByPckag {
 
