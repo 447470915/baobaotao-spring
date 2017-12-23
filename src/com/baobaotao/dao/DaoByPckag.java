@@ -19,7 +19,7 @@ import org.springframework.stereotype.Repository;
 import com.mysql.jdbc.ResultSetMetaData;
 
 @Repository
-public class AccessProModule {
+public class DaoByPckag {
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
@@ -77,14 +77,13 @@ public class AccessProModule {
 		});
 		return (resultList);
 	}
-
+	
 	// 调用存储过程：有返回参数（结果集）
 	public List<Map<String,Object>> accessDBSet(final String proName, final ArrayList<String> input,
 			final ArrayList<String> output) {
 		final int inOutParamsLen = input.size() + output.size();// 输入输入的总参数个数
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		
-		CallableStatementCreator css = new CallableStatementCreator(){
+		List<Map<String,Object>> listMap = jdbcTemplate.execute(new CallableStatementCreator(){
 			@Override
 			public CallableStatement createCallableStatement(Connection con) throws SQLException {
 				// 定义存储过程接口//String storedProc = "{call
@@ -116,25 +115,25 @@ public class AccessProModule {
 				System.out.println(storedProc);
 				return (CallableStatement) cs;
 			}
-		};
-		List<Map<String,Object>> listMap = jdbcTemplate.execute(css, new CallableStatementCallback() {
+		}, new CallableStatementCallback(){
 			@Override
 			public Object doInCallableStatement(CallableStatement cs) throws SQLException, DataAccessException {
-				ResultSet rs=null; 
-				System.out.println(cs.execute());
+				ResultSet rs=null;
+				cs.execute();
 				rs=cs.getResultSet();
 				return handleResultSetToListMap(rs);// 获取输出参数的值
 			}
+		
 		});
 		return (listMap);
 	}
 	
-    /** 
+	/** 
      * @param resultSet 
      * @return 
      * @throws SQLException 
     */  
-    public List<Map<String, Object>> handleResultSetToListMap(  
+    private List<Map<String, Object>> handleResultSetToListMap(  
             ResultSet resultSet) throws SQLException {  
         List<Map<String, Object>> values = new ArrayList<Map<String, Object>>();  
   
@@ -168,4 +167,5 @@ public class AccessProModule {
   
         return labels;  
     } 
+
 }

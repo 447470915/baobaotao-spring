@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.baobaotao.dao.AccessProModule;
+import com.baobaotao.dao.DaoByPckag;
 import com.baobaotao.service.HomePageService;
 
 @Controller
@@ -23,7 +23,7 @@ public class TenantLoginController{
 	private static Logger logger=Logger.getLogger("daily-log");
 	
 	@Autowired
-	private AccessProModule accessProModule;
+	private DaoByPckag accessProModule;
 	
 	@Autowired
 	private HomePageService homePageService;
