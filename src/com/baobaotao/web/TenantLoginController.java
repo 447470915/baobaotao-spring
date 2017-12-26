@@ -23,7 +23,7 @@ public class TenantLoginController{
 	private static Logger logger=Logger.getLogger("daily-log");
 	
 	@Autowired
-	private DaoByPckag accessProModule;
+	private DaoByPckag daoByPckag;
 	
 	@Autowired
 	private HomePageService homePageService;
@@ -88,7 +88,7 @@ public class TenantLoginController{
 		proOutputParams.add("?");
 		
 		//数据库操作
-		proOutputParams=accessProModule.accessDB("pckg_tenant_login",proInputParams,proOutputParams);
+		proOutputParams=daoByPckag.accessDB("pckg_tenant_login",proInputParams,proOutputParams);
 		//取返回值
 		String o_flag=proOutputParams.get(0);//0-查询成功，1-未查询到，2-密码错误，-1异常
 		String o_msg=proOutputParams.get(1);
@@ -131,7 +131,7 @@ public class TenantLoginController{
 		proOutputParams.add("?");//租户id
 		
 		//数据库操作
-		proOutputParams=accessProModule.accessDB("pckg_tenant_register",proInputParams,proOutputParams);
+		proOutputParams=daoByPckag.accessDB("pckg_tenant_register",proInputParams,proOutputParams);
 		//取返回值
 		String o_flag=proOutputParams.get(0);//0-注册成功，1-账户已存在，-1异常
 		String o_msg=proOutputParams.get(1);

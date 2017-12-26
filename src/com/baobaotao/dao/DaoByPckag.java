@@ -34,7 +34,7 @@ public class DaoByPckag {
 			final ArrayList<String> output) {
 		final int inOutParamsLen = input.size() + output.size();// 输入输入的总参数个数
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		ArrayList<String> resultList = jdbcTemplate.execute(new CallableStatementCreator() {
+		ArrayList<String> resultList = (ArrayList<String>) jdbcTemplate.execute(new CallableStatementCreator() {
 			@Override
 			public CallableStatement createCallableStatement(Connection con) throws SQLException {
 				// 定义存储过程接口//String storedProc = "{call
@@ -88,7 +88,7 @@ public class DaoByPckag {
 			final ArrayList<String> output) {
 		final int inOutParamsLen = input.size() + output.size();// 输入输入的总参数个数
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		List<Map<String,Object>> listMap = jdbcTemplate.execute(new CallableStatementCreator(){
+		List<Map<String,Object>> listMap = (List<Map<String, Object>>) jdbcTemplate.execute(new CallableStatementCreator(){
 			@Override
 			public CallableStatement createCallableStatement(Connection con) throws SQLException {
 				// 定义存储过程接口//String storedProc = "{call
