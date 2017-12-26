@@ -20,7 +20,7 @@ public class UserDao {
 	public String getMatchCount(final String userName,  final String password) {
 		String sqlStr = " SELECT count(*) FROM t_user "
 				 + " WHERE user_name =? and password=? ";
-		int rs=jdbcTemplate.queryForInt(sqlStr, new Object[] { userName, password });
+		int rs=jdbcTemplate.queryForObject(sqlStr, new Object[] { userName, password },Integer.class);
 		if(rs==0){
 			return("1");
 		}else{
@@ -54,7 +54,7 @@ public class UserDao {
 	public int queryIsExistUserName(String userName){
 		String sqlStr = " SELECT count(1) FROM t_user "
 				+ " WHERE user_name =? ";
-		return jdbcTemplate.queryForInt(sqlStr, new Object[] { userName});
+		return jdbcTemplate.queryForObject(sqlStr, new Object[] { userName},Integer.class);
 	}
 	
 	//保存新注册的用户信息到数据库

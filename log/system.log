@@ -4144,3 +4144,26 @@ java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refr
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+2017-12-27 00:26:45,916 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2017-12-27 00:26:46,676 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Dec 27 00:26:46 CST 2017]; root of context hierarchy
+2017-12-27 00:26:47,132 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-27 00:26:50,898 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 4801 ms
+2017-12-27 00:26:50,919 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2017-12-27 00:26:50,924 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Wed Dec 27 00:26:50 CST 2017]; parent: Root WebApplicationContext
+2017-12-27 00:26:50,925 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2017-12-27 00:26:51,268 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,270 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,com.baobaotao.web.LoginCommand)
+2017-12-27 00:26:51,271 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String com.baobaotao.web.LoginController.loginPage()
+2017-12-27 00:26:51,271 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,271 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,273 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String com.baobaotao.web.LoginController.registerPage()
+2017-12-27 00:26:51,273 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,com.baobaotao.web.LoginCommand)
+2017-12-27 00:26:51,275 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,275 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.TenantLoginController.loginPage()
+2017-12-27 00:26:51,275 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,276 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.TenantLoginController.rigsterPage()
+2017-12-27 00:26:51,276 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.baobaotao.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,280 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test1.create]}" onto public org.springframework.web.servlet.ModelAndView test.TestController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2017-12-27 00:26:51,698 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Wed Dec 27 00:26:50 CST 2017]; parent: Root WebApplicationContext
+2017-12-27 00:26:51,853 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 933 ms
+2017-12-27 00:28:44,053 INFO  system-logger - sys用户:151515，使用密码：afd查询一次.
