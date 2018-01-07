@@ -1,5 +1,5 @@
 引用的jar有：
-1：spring3.2.4（n个）
+1：spring5.0.2（21个jar包）
 2.jdbc（n个）
 3.log4j（n个）
-4.mybatis jar包 1个
+4.mybatis jar包 1个  mybatis-spring jar包一个
