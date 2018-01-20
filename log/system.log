@@ -790,3 +790,163 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 6; ≤ª‘ –
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
 	... 53 more
+2018-01-20 23:30:16,198 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-20 23:30:16,574 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat Jan 20 23:30:16 CST 2018]; root of context hierarchy
+2018-01-20 23:30:16,651 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-20 23:30:18,428 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 2215 ms
+2018-01-20 23:30:18,465 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-20 23:30:18,470 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:30:18 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:30:18,470 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-20 23:30:19,262 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:19,264 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-20 23:30:19,264 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-20 23:30:19,264 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:19,264 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginCommand)
+2018-01-20 23:30:19,264 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginCommand)
+2018-01-20 23:30:19,264 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:19,265 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-20 23:30:19,266 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:19,266 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:19,266 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:19,266 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-20 23:30:19,430 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:30:18 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:30:19,576 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 1111 ms
+2018-01-20 23:30:29,927 INFO  support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:30:18 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:30:29,931 INFO  support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat Jan 20 23:30:16 CST 2018]; root of context hierarchy
+2018-01-20 23:30:32,809 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-20 23:30:32,886 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat Jan 20 23:30:32 CST 2018]; root of context hierarchy
+2018-01-20 23:30:32,964 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-20 23:30:34,137 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 1328 ms
+2018-01-20 23:30:34,213 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-20 23:30:34,216 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:30:34 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:30:34,217 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-20 23:30:36,270 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:36,272 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-20 23:30:36,272 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-20 23:30:36,273 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:36,273 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginCommand)
+2018-01-20 23:30:36,275 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginCommand)
+2018-01-20 23:30:36,276 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:36,278 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-20 23:30:36,278 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:36,278 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:36,278 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:30:36,282 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-20 23:30:36,389 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:30:34 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:30:36,558 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 2345 ms
+2018-01-20 23:31:02,975 INFO  system-logger - sys”√ªß:1£¨ π”√√‹¬Î£∫1≤È—Ø“ª¥Œ.
+2018-01-20 23:32:20,519 INFO  system-logger - sys”√ªß:1£¨ π”√√‹¬Î£∫1≤È—Ø“ª¥Œ.
+2018-01-20 23:34:20,545 INFO  support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:30:34 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:34:20,610 INFO  support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat Jan 20 23:30:32 CST 2018]; root of context hierarchy
+2018-01-20 23:56:39,954 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-20 23:56:40,119 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat Jan 20 23:56:40 CST 2018]; root of context hierarchy
+2018-01-20 23:56:40,201 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-20 23:56:41,388 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 1433 ms
+2018-01-20 23:56:41,441 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-20 23:56:41,444 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:56:41 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:56:41,444 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-20 23:56:41,876 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:56:41,877 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-20 23:56:41,877 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:56:41,877 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-20 23:56:41,878 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-20 23:56:41,878 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-20 23:56:41,878 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:56:41,879 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-20 23:56:41,879 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:56:41,879 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:56:41,879 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-20 23:56:41,880 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:56:41,964 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:56:41 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:56:42,079 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 638 ms
+2018-01-20 23:59:01,019 INFO  support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:56:41 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:59:01,036 INFO  support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat Jan 20 23:56:40 CST 2018]; root of context hierarchy
+2018-01-20 23:59:03,541 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-20 23:59:03,621 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat Jan 20 23:59:03 CST 2018]; root of context hierarchy
+2018-01-20 23:59:03,688 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-20 23:59:04,594 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 1053 ms
+2018-01-20 23:59:04,621 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-20 23:59:04,624 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:59:04 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:59:04,625 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-20 23:59:05,117 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:59:05,119 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-20 23:59:05,120 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:59:05,120 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-20 23:59:05,120 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-20 23:59:05,120 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-20 23:59:05,120 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:59:05,122 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-20 23:59:05,122 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:59:05,122 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:59:05,123 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-20 23:59:05,123 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-20 23:59:05,246 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:59:04 CST 2018]; parent: Root WebApplicationContext
+2018-01-20 23:59:05,383 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 762 ms
+2018-01-21 00:00:40,605 INFO  support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sat Jan 20 23:59:04 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:00:40,611 INFO  support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat Jan 20 23:59:03 CST 2018]; root of context hierarchy
+2018-01-21 00:00:42,338 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-21 00:00:42,401 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sun Jan 21 00:00:42 CST 2018]; root of context hierarchy
+2018-01-21 00:00:42,459 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-21 00:00:43,892 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 1554 ms
+2018-01-21 00:00:43,924 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-21 00:00:43,928 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:00:43 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:00:43,929 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-21 00:00:44,361 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:00:44,363 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-21 00:00:44,363 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:00:44,363 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-21 00:00:44,363 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-21 00:00:44,363 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-21 00:00:44,363 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:00:44,364 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-21 00:00:44,364 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:00:44,365 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:00:44,365 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-21 00:00:44,365 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:00:44,459 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:00:43 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:00:44,585 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 661 ms
+2018-01-21 00:02:52,115 INFO  support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:00:43 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:02:52,124 INFO  support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sun Jan 21 00:00:42 CST 2018]; root of context hierarchy
+2018-01-21 00:02:54,069 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-21 00:02:54,142 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sun Jan 21 00:02:54 CST 2018]; root of context hierarchy
+2018-01-21 00:02:54,226 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-21 00:02:55,665 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 1596 ms
+2018-01-21 00:02:55,693 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-21 00:02:55,696 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:02:55 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:02:55,697 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-21 00:02:56,051 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:02:56,052 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-21 00:02:56,052 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:02:56,053 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-21 00:02:56,053 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-21 00:02:56,053 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-21 00:02:56,053 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:02:56,054 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-21 00:02:56,054 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:02:56,054 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:02:56,054 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-21 00:02:56,054 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:02:56,160 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:02:55 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:02:56,296 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 603 ms
+2018-01-21 00:03:35,583 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-01-21 00:03:35,767 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sun Jan 21 00:03:35 CST 2018]; root of context hierarchy
+2018-01-21 00:03:35,847 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-21 00:03:37,431 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 1846 ms
+2018-01-21 00:03:37,461 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization started
+2018-01-21 00:03:37,465 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:03:37 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:03:37,466 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/baobaotao-servlet.xml]
+2018-01-21 00:03:37,944 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:03:37,946 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-01-21 00:03:37,946 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:03:37,946 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-21 00:03:37,947 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-01-21 00:03:37,947 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:03:37,947 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-01-21 00:03:37,949 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-01-21 00:03:37,950 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-01-21 00:03:37,950 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:03:37,950 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:03:37,950 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-01-21 00:03:38,075 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'baobaotao-servlet': startup date [Sun Jan 21 00:03:37 CST 2018]; parent: Root WebApplicationContext
+2018-01-21 00:03:38,231 INFO  servlet.DispatcherServlet - FrameworkServlet 'baobaotao': initialization completed in 770 ms
+2018-01-21 00:05:53,967 INFO  system-logger - sys”√ªß:555£¨ π”√√‹¬Î£∫555≤È—Ø“ª¥Œ.

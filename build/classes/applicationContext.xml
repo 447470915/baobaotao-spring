@@ -15,9 +15,7 @@
        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<!-- 扫描类包，将标注Spring注解的类自动转化Bean，同时完成Bean的注入 -->
-	<context:component-scan base-package="com.baobaotao.dao" />
-	<context:component-scan base-package="com.baobaotao.service" />
-	<context:component-scan base-package="test" />
+<!-- 	<context:component-scan base-package="com.baobaotao.dao" /> -->
 
 	<!-- 配置数据源 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
@@ -31,23 +29,43 @@
 		<property name="maxWait" value = "120000"/>
 	</bean>
 	
-	<!-- 配置Jdbc模板  -->
+	<!--   -->
+	<!--=============================================配置Jdbc模板=====================================================-->
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
 		p:dataSource-ref="dataSource" />
+		
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		p:dataSource-ref="dataSource" />
+	<!-- 通过AOP配置提供事务增强，让service包下所有Bean的所有方法拥有事务 -->
+	<aop:config proxy-target-class="true">
+		<aop:pointcut id="serviceMethod"
+			expression=" execution(* com.baobaotao.service..*(..))" />
+		<aop:advisor pointcut-ref="serviceMethod" advice-ref="txAdvice" />
+	</aop:config>
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+	<!--=======================================end of 配置Jdbc模板=====================================================-->
 
+	<!--=======================================mybatis===============================================================-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<property name="dataSource" ref="dataSource" />
 		<property name="mapperLocations">
 			<array>
-				<value>classpath:zmapper/test/*.xml</value>
+				<value>classpath:zmapper/*/*.xml</value>
 			</array>
 		</property>
-		<property name="typeAliasesPackage" value="zmapper.test" />
+		<property name="typeAliasesPackage" value="zmapper" />
 	</bean>
 	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="zmapper.test"/> 
+		<property name="basePackage" value="zmapper"/> 
 	</bean>
-
+	<!--=================================end of mybatis==============================================================-->
+	
 </beans>

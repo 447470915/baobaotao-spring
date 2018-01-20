@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>    
-<!DOCTYPE mapper 
-	PUBLIC "-//mybatis.org//DTD config 3.0//EN"
-	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
-<mapper namespace="zmapper.test.Mapper">  
-	<select id="selectCount" resultType="Integer">
-		SELECT count(1) FROM t_user
-	</select>
-</mapper>  
