@@ -11,8 +11,7 @@
 </style>
 
 </head>
-<body onload="get_ie_wh()">
-	
+<body>
 	<div id="first"  style="width:96%;height:2000px;margin:0 auto; background:#f2f2f2;overflow:auto;">
 			<div id="11"
 				style="width: 49.25%; height:40%; background: #ffffff; float: left">
@@ -20,7 +19,7 @@
 					<tr>
 						<td>
 							<center>
-								<a href="http://192.168.100.14:9080/basic-create-project/jsp/videoIndex/videoPage.html">
+								<a href="http://192.168.100.14:9080/basic-create-project/view/videoIndex/videoPage.html">
 								<img id="kind" src="images/content/5.jpg"
 									style="min-width: 100%; min-height: 100%" />
 								</a>
@@ -223,15 +222,8 @@
 						</tr>
 					</table>
 			</div>
-		
 	</div>
-<script language="javascript">
- function get_ie_wh(){
-	 var w=document.documentElement.clientWidth ;//可见区域宽度
-	 var h=document.documentElement.clientHeight;//可见区域高度
-	 document.getElementById("first").style.height=h+"px";
- }
- </script>
+
 </body>
 </html>
 

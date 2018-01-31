@@ -6,16 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<%
-	String path = request.getContextPath();//得到项目名称:baobaotao-spring
-	//http://localhost:9080/baobaotao-spring/
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
-%>
-<base href="<%=basePath%>">
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/event.js"></script>
-<script type="text/javascript" src="js/tween.js"></script>
+<link href="/basic-create-project/view/catalogIndex/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/basic-create-project/view/catalogIndex/event.js"></script>
+<script type="text/javascript" src="/basic-create-project/view/catalogIndex/tween.js"></script>
 
 <title>宝宝淘论坛登录</title>
 </head>
@@ -48,7 +41,7 @@
 			</ul>
 			
 			<!--右侧内容区域  -->
-			<div id="container">
+			<div id="rightContainer">
 				<div id="content">
 
 					<div class="tabContent selectedContent">

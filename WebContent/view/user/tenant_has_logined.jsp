@@ -6,13 +6,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<%
-	String path = request.getContextPath();//得到项目名称:baobaotao-spring
-	//http://localhost:9080/baobaotao-spring/
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
-%>
-<base href="<%=basePath%>">
 <title>宝宝淘论坛登录</title>
 </head>
 

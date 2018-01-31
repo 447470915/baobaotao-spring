@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 	
@@ -6,12 +6,6 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>未完成</title>
-	<%  
-	String path = request.getContextPath();//得到项目名称:baobaotao-spring
-	//http://localhost:9080/baobaotao-spring/
-	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-	%>
-	<base href="<%=basePath%>">
 	</head>
 	<body>      
 		<div style="width:90%; margin:0 auto">
@@ -40,7 +34,7 @@
 		
 		
 		<center>
-			<img id="kind" src="images/content/QR code_sxf.jpg"
+			<img id="kind" src="image/QR code_sxf.jpg"
 				style="max-width: 100%; max-height: 100%" />
 		</center>
 		

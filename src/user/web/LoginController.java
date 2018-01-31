@@ -25,18 +25,18 @@ public class LoginController{
 	@Autowired
 	private HomePageService homePageService; 
 	
-	@RequestMapping(value = "/login.create")
+	@RequestMapping(value = "/view/user/login.create")
 	public String loginPage(){
-		return "user/login";
+		return "user/loginPage";
 	}
 	
-	@RequestMapping(value = "/loginCheck.create")
+	@RequestMapping(value = "/view/user/loginCheck.create")
 	public ModelAndView loginCheck(HttpServletRequest request,LoginInput loginCommand){
 		boolean isValidUser = 
 			   userService.hasMatchUser(loginCommand.getUserName(),
 					                    loginCommand.getPassword());
 		if (!isValidUser) {
-			return new ModelAndView("login", "error", "用户名或是密码错误");
+			return new ModelAndView("user/loginPage", "error", "用户名或是密码错误");
 		} else {
 			User user = userService.findUserByUserName(loginCommand
 					.getUserName());
@@ -45,16 +45,16 @@ public class LoginController{
 			userService.loginSuccess(user);
 			request.getSession().setAttribute("user", user);
 			request.getSession().setAttribute("isLogin", "true");
-			return new ModelAndView("user/has_logined");
+			return new ModelAndView("user/hasLoginedPage");
 		}
 	}
 	
-	@RequestMapping(value = "/register.create")
+	@RequestMapping(value = "/view/user/register.create")
 	public String registerPage(){
-		return "user/register";
+		return "user/registerPage";
 	}
 	
-	@RequestMapping(value = "/my_login_register.create")
+	@RequestMapping(value = "/view/user/my_login_register.create")
 	public ModelAndView my_login_register(HttpServletRequest request){
 
 		String isLogoutFlag="";
@@ -68,13 +68,13 @@ public class LoginController{
 				
 		if((request.getSession().getAttribute("isLogin")==null)||
 			(request.getSession().getAttribute("isLogin")=="false")){//未登录
-			return new ModelAndView("user/my_login_register");
+			return new ModelAndView("user/userPage");
 		}else{//已登录，直接进入登录界面
-			return new ModelAndView("user/has_logined");
+			return new ModelAndView("user/hasLoginedPage");
 		}
 	}
 	
-	@RequestMapping(value = "/registerProcess.create")
+	@RequestMapping(value = "/view/user/registerProcess.create")
 	public ModelAndView registerProcess(HttpServletRequest request,LoginInput loginInput){
 		boolean isExist =
 			   userService.isExistUserName(loginInput.getUserName());
@@ -90,13 +90,13 @@ public class LoginController{
 				request.getSession().setAttribute("user", user);
 				request.getSession().setAttribute("isLogin","true");
 				//logger.info(loginCommand.getUserName()+"注册成功.");
-				return new ModelAndView("user/has_logined");
+				return new ModelAndView("user/hasLoginedPage");
 			}else{
-				return new ModelAndView("user/register", "error", "系统错误！");
+				return new ModelAndView("user/registerPage", "error", "系统错误！");
 			}
 
 		} else {//存在
-			return new ModelAndView("user/register", "error", "用户名已存在！");
+			return new ModelAndView("user/registerPage", "error", "用户名已存在！");
 		}
 	}
 	

@@ -6,13 +6,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<%
-	String path = request.getContextPath();//得到项目名称:baobaotao-spring
-	//http://localhost:9080/baobaotao-spring/
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
-%>
-<base href="<%=basePath%>">
 <title>宝宝淘论坛登录</title>
 </head>
 <style>
@@ -36,7 +29,7 @@
 				<td>
 					<div id="login_bt_id"
 						style="width: 250px; height: 250px; margin: auto;">
-						<img src="images/my/has_logined_head_img.png"
+						<img src="image/has_logined_head_img.png"
 							style="min-width: 100%; min-height: 100%" />
 					</div> <br>
 				<br>
@@ -61,13 +54,12 @@
 							type="submit" value="设置" /><!--这个按钮并不提交，只是用来在前端显示下拉按钮  -->
 					</form>
 					<br>
-					<form id="logout_id" class="noshow" action="<c:url value="my_login_register.create"/>" method="post">
+					<form id="logout_id" class="noshow" action="http://localhost:9080/basic-create-project/view/user/my_login_register.create" method="post">
 						<input name="isLogout" type="hidden"   id="isLogout" value="true" >  
 						<input
 							style="height: 100px; width: 100%; ; font-size: 50px"
 							type="submit" value="退出" />
 					</form>
-					
 				</td>
 			</tr>
 		</table>

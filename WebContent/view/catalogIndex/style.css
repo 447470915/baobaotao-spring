@@ -39,7 +39,7 @@ a{color:#487d98;}
 .tabContent .witness p a:hover{background-color:#efefef;}
 .tabContent .witness p .ele{left:0px;}
 
-#container{float:left;width:800px;height:2000px;background:#fff;overflow:auto;}
+#rightContainer{float:left;width:800px;height:2000px;background:#fff;overflow:auto;}
 #slider{position:absolute;top:0px;right:0;width:6px;border-radius:6px;background:#ccc;cursor:pointer;}
 #sliderParent{position:absolute;left:0;height:0;width:1200px;z-index:999;}
 #outerWrap{position:relative;z-index:999}
