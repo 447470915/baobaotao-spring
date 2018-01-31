@@ -5,12 +5,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>主页</title>
-	<%  
-	String path = request.getContextPath();//得到项目名称:baobaotao-spring
-	//http://localhost:9080/baobaotao-spring/
-	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-	%>
-	<base href="<%=basePath%>">
 <style>
 	a{ text-decoration:none; }
 	Div{overflow:hidden}
@@ -26,7 +20,7 @@
 					<tr>
 						<td>
 							<center>
-								<a href="jsp/catalog.jsp">
+								<a href="http://192.168.100.14:9080/basic-create-project/jsp/videoIndex/videoPage.html">
 								<img id="kind" src="images/content/5.jpg"
 									style="min-width: 100%; min-height: 100%" />
 								</a>

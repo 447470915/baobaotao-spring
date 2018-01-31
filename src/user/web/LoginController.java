@@ -27,7 +27,7 @@ public class LoginController{
 	
 	@RequestMapping(value = "/login.create")
 	public String loginPage(){
-		return "login";
+		return "user/login";
 	}
 	
 	@RequestMapping(value = "/loginCheck.create")
@@ -45,13 +45,13 @@ public class LoginController{
 			userService.loginSuccess(user);
 			request.getSession().setAttribute("user", user);
 			request.getSession().setAttribute("isLogin", "true");
-			return new ModelAndView("has_logined");
+			return new ModelAndView("user/has_logined");
 		}
 	}
 	
 	@RequestMapping(value = "/register.create")
 	public String registerPage(){
-		return "register";
+		return "user/register";
 	}
 	
 	@RequestMapping(value = "/my_login_register.create")
@@ -68,9 +68,9 @@ public class LoginController{
 				
 		if((request.getSession().getAttribute("isLogin")==null)||
 			(request.getSession().getAttribute("isLogin")=="false")){//未登录
-			return new ModelAndView("my_login_register");
+			return new ModelAndView("user/my_login_register");
 		}else{//已登录，直接进入登录界面
-			return new ModelAndView("has_logined");
+			return new ModelAndView("user/has_logined");
 		}
 	}
 	
@@ -90,13 +90,13 @@ public class LoginController{
 				request.getSession().setAttribute("user", user);
 				request.getSession().setAttribute("isLogin","true");
 				//logger.info(loginCommand.getUserName()+"注册成功.");
-				return new ModelAndView("has_logined");
+				return new ModelAndView("user/has_logined");
 			}else{
-				return new ModelAndView("register", "error", "系统错误！");
+				return new ModelAndView("user/register", "error", "系统错误！");
 			}
 
 		} else {//存在
-			return new ModelAndView("register", "error", "用户名已存在！");
+			return new ModelAndView("user/register", "error", "用户名已存在！");
 		}
 	}
 	
@@ -112,8 +112,7 @@ public class LoginController{
 	//给不同用户提供不同
 	@RequestMapping(value = "/test.create")
 	public ModelAndView test(HttpServletRequest request){
-		System.out.println("here");
-		return new ModelAndView("frame_list");
+		return new ModelAndView("catalogIndex/frame_list");
 	}
 	
 }

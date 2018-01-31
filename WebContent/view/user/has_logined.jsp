@@ -54,7 +54,7 @@
 		<table width="100%" height="100%">
 			<tr>
 				<td>
-					<form action="<c:url value="jsp/my_login_register.jsp"/>" onsubmit="return showLogoutBt()" method="post">
+					<form action="<c:url value="jsp/user/my_login_register.jsp"/>" onsubmit="return showLogoutBt()" method="post">
 						<input name="isLogout" type="hidden"   id="isLogout" value="true" >  
 						<input
 							style="height: 100px; width: 100%; background: orange; font-size: 50px"
