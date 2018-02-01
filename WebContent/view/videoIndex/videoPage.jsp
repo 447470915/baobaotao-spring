@@ -19,7 +19,7 @@
 					<tr>
 						<td>
 							<center>
-								<a href="http://192.168.100.14:9080/basic-create-project/view/videoIndex/videoPage.html">
+								<a href="http://192.168.100.14:9080/basic-create-project/view/videoIndex/djVideoFrame.html">
 								<img id="kind" src="images/content/5.jpg"
 									style="min-width: 100%; min-height: 100%" />
 								</a>
@@ -35,8 +35,10 @@
 					<tr>
 						<td>
 							<center>
+							<a href="http://192.168.100.14:9080/basic-create-project/view/videoIndex/myPlayer.jsp">
 								<img id="kind" src="images/content/6.jpg"
 									style="max-width: 100%; max-height: 100%" />
+							</a>		
 							</center>
 						</td>
 					</tr>
