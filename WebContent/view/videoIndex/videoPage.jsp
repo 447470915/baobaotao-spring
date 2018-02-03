@@ -14,7 +14,7 @@
 <body>
 	<div id="first"  style="width:96%;height:2000px;margin:0 auto; background:#f2f2f2;overflow:auto;">
 			<div id="11"
-				style="width: 49.25%; height:40%; background: #ffffff; float: left">
+				style="width: 49.25%; height:30%; background: #ffffff; float: left">
 				<table width="100%" height="100%">
 					<tr>
 						<td>
@@ -30,7 +30,7 @@
 			</div>
 
 			<div id="12"
-				style="width: 49.25%; height: 40%; margin-left: 1.5%; background: #ffffff; float: left">
+				style="width: 49.25%; height: 30%; margin-left: 1.5%; background: #ffffff; float: left">
 				<table width="100%" height="100%">
 					<tr>
 						<td>
@@ -45,20 +45,22 @@
 				</table>
 			</div>
 
-			<div id="21" style="width:49.25%; height:40%;margin-top:1.5%;background:#ffffff;float:left">
+			<div id="21" style="width:49.25%; height:30%;margin-top:1.5%;background:#ffffff;float:left">
 				<table width="100%" height="100%">
 					<tr>
 						<td>
 							<center>
+							<a href="http://192.168.100.14:9080/basic-create-project/view/videoIndex/myPlayer2.jsp">
 								<img id="kind" src="images/content/7.jpg"
 									style="max-width: 100%; max-height: 100%" />
+							</a>
 							</center>
 						</td>
 					</tr>
 				</table>
 			</div>
 		
-			<div id="22" style="width:49.25%; height:40%;margin-top:1.5%;margin-left:1.5%;background:#ffffff;float:left">
+			<div id="22" style="width:49.25%; height:30%;margin-top:1.5%;margin-left:1.5%;background:#ffffff;float:left">
 					<table width="100%" height="100%">
 						<tr>
 							<td>

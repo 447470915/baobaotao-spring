@@ -57,7 +57,7 @@ Div {
 		<div style="width: 25%; float: left; font-size: 25px;">
 			<center>
 				<div>
-					<a href="../user/userPage.jsp"> <img id="my"
+					<a href="../../view/user/my_login_register.create"> <img id="my"
 						src="../../images/catalog/my_nofoc.png" />
 					</a>
 				</div>

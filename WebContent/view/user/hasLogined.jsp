@@ -54,7 +54,7 @@
 							type="submit" value="设置" /><!--这个按钮并不提交，只是用来在前端显示下拉按钮  -->
 					</form>
 					<br>
-					<form id="logout_id" class="noshow" action="http://localhost:9080/basic-create-project/view/user/my_login_register.create" method="post">
+					<form id="logout_id" class="noshow" action="my_login_register.create" method="post">
 						<input name="isLogout" type="hidden"   id="isLogout" value="true" >  
 						<input
 							style="height: 100px; width: 100%; ; font-size: 50px"
