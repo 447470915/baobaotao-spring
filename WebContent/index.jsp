@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>蓝提子</title>
+<title>createIt</title>
 <%-- 	<%  
 	String path = request.getContextPath();//得到项目名称:baobaotao-spring
 	//http://localhost:9080/basic-create-project/
@@ -71,7 +71,6 @@ Div {
 				</div>
 			</center>
 		</div>
-
 	</div>
 
 	<script language="javascript">

@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<title>蓝提子</title>
+<title>createIt</title>
 <style>
 a {
 	text-decoration: none;

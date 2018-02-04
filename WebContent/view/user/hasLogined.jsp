@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>宝宝淘论坛登录</title>
+<script type="text/javaScript" src="../../js/jquery-3.3.1.min.js"></script>
+<title>已登录</title>
 </head>
 <style>
 .block {
@@ -14,12 +15,6 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	background: white;
-}
-.noshow{
-	display:none;	
-}
-.show{
-	display:true;
 }
 </style>
 <body style="background: #f0f0f0;">
@@ -54,7 +49,7 @@
 							type="submit" value="设置" /><!--这个按钮并不提交，只是用来在前端显示下拉按钮  -->
 					</form>
 					<br>
-					<form id="logout_id" class="noshow" action="my_login_register.create" method="post">
+					<form id="logout_id" style="display:none" action="my_login_register.create" method="post">
 						<input name="isLogout" type="hidden"   id="isLogout" value="true" >  
 						<input
 							style="height: 100px; width: 100%; ; font-size: 50px"
@@ -71,11 +66,12 @@
 	var i=0;
 	function showLogoutBt(){
 		if(i%2==0){
-			document.getElementById("logout_id").className="show";
+			//document.getElementById("logout_id").className="show";
+			$("#logout_id").show();
 			i++;
 			return false;
 		}else{
-			document.getElementById("logout_id").className="noshow";
+			$("#logout_id").hide();
 			i++;
 			return false;
 		}

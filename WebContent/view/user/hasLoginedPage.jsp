@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<title>蓝提子</title>
+<title>createIt</title>
 <style>
 a {
 	text-decoration: none;
@@ -59,7 +59,7 @@ Div {
 		<div style="width: 25%; float: left; font-size: 25px;">
 			<center>
 				<div>
-					<a href="userPage.jsp"> <img id="my"
+					<a href="../../view/user/my_login_register.create"> <img id="my"
 						src="../../images/catalog/my.png" />
 					</a>
 				</div>

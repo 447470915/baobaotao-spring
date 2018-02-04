@@ -5,7 +5,8 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class EnvProperties {
-	public static Properties getProperties(){
+	private static Properties properties = init();
+	private static Properties init(){
 		Properties prop = null;
 		try {
 	        prop = new Properties();
@@ -19,5 +20,8 @@ public class EnvProperties {
 	        e.printStackTrace();
 	    }
 		return prop;
+	}
+	public static Properties getProperties(){
+		return properties;
 	}
 }

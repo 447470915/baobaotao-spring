@@ -7,7 +7,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="event.js"></script>
 <script type="text/javascript" src="tween.js"></script>
-<title>蓝提子</title>
+<title>createIt</title>
 <style>
 a {
 	text-decoration: none;
@@ -24,7 +24,7 @@ Div {
 	<div id="container"
 		style="width: 100%; height: 10000px; background: #f2f2f2;overflow:auto">
 
-		<%@ include file = "frame_list.jsp" %>
+		<%@ include file = "frameList.jsp" %>
 	
 	</div>
 

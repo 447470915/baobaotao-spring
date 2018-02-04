@@ -13,7 +13,7 @@
    <!--系统日志-->  
    <appender name="system-log"  
 		class="org.apache.log4j.RollingFileAppender">  
-     <param name="File" value="D:/javaee_workspace/baobaotao-spring/log/system.log" />  
+     <param name="File" value="D:/javaee_workspace/basic-create-project/log/system.log" />  
      <param name="encoding" value="gbk" />
      <param name="BufferedIO" value="false" /> 
      <param name="MaxFileSize" value="10MB" />

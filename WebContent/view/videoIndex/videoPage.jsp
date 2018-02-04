@@ -65,8 +65,10 @@
 						<tr>
 							<td>
 								<center>
+								<a href="http://192.168.100.14:9080/basic-create-project/view/videoIndex/myPlayer3.jsp">
 									<img id="kind" src="images/content/8.jpg"
 										style="max-width: 100%; max-height: 100%" />
+								</a>		
 								</center>
 							</td>
 						</tr>
