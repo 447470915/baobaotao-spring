@@ -368,42 +368,73 @@
 
 					<div class="tabContent">
 						<h3>第九卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/1.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/2.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十一卷</h3>
+												<center>
+						<img id="kind" src="../../images/content/3.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十二卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/4.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十三卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/5.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十四卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/6.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十五卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/7.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十六卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/8.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十七卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/9.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 					<div class="tabContent">
 						<h3>第十八卷</h3>
-
+						<center>
+						<img id="kind" src="../../images/content/10.jpg"
+									style="width: 100%; max-height: 100%" />
+						</center>
 					</div>
 				</div>
 			</div>
