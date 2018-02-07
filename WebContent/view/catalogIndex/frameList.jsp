@@ -24,24 +24,24 @@
 			<!--左侧目录区域 -->
 			<div id="sliderParent"></div>
 			<ul id="tabGroupId" class="tabGroup">
-				<li class="tabOption selectedTab">第一画卷</li>
-				<li class="tabOption">第二画卷</li>
-				<li class="tabOption">第三画卷</li>
-				<li class="tabOption">第四画卷</li>
-				<li class="tabOption">第五画卷</li>
-				<li class="tabOption">第六画卷</li>
-				<li class="tabOption">第七画卷</li>
-				<li class="tabOption">第八画卷</li>
-				<li class="tabOption">第九画卷</li>
-				<li class="tabOption">第十画卷</li>
-				<li class="tabOption">第十一画卷</li>
-				<li class="tabOption">第十二画卷</li>
-				<li class="tabOption">第十三画卷</li>
-				<li class="tabOption">第十四画卷</li>
-				<li class="tabOption">第十五画卷</li>
-				<li class="tabOption">第十六画卷</li>
-				<li class="tabOption">第十七画卷</li>
-				<li class="tabOption">第十八画卷</li>
+				<li class="tabOption selectedTab"><td>第一卷</td></li>
+				<li class="tabOption">第二卷</li>
+				<li class="tabOption">第三卷</li>
+				<li class="tabOption">第四卷</li>
+				<li class="tabOption">第五卷</li>
+				<li class="tabOption">第六卷</li>
+				<li class="tabOption">第七卷</li>
+				<li class="tabOption">第八卷</li>
+				<li class="tabOption">第九卷</li>
+				<li class="tabOption">第十卷</li>
+				<li class="tabOption">第十一卷</li>
+				<li class="tabOption">第十二卷</li>
+				<li class="tabOption">第十三卷</li>
+				<li class="tabOption">第十四卷</li>
+				<li class="tabOption">第十五卷</li>
+				<li class="tabOption">第十六卷</li>
+				<li class="tabOption">第十七卷</li>
+				<li class="tabOption">第十八卷</li>
 			</ul>
 
 			<!--右侧内容区域  -->
@@ -49,7 +49,7 @@
 				<div id="content">
 
 					<div class="tabContent selectedContent">
-						<h3>第一画卷</h3>
+						<h3>第一卷</h3>
 						<dl>
 							<dt>
 								<span class="high"><font font-size="30px">第一节：</font></span>
@@ -93,7 +93,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第二画卷</h3>
+						<h3>第二卷</h3>
 						<dl>
 							<dt>
 								<span class="high"><font font-size="30px">第一节：</font></span>
@@ -137,7 +137,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第三画卷</h3>
+						<h3>第三卷</h3>
 						<dl>
 						<dl>
 							<dt>
@@ -182,7 +182,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第四画卷</h3>
+						<h3>第四卷</h3>
 						<dl>
 							<dt>
 								<span class="high"><font font-size="30px">第一节：</font></span>
@@ -226,7 +226,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第五画卷</h3>
+						<h3>第五卷</h3>
 						<dl>
 							<dt>
 								<span class="high"><font font-size="30px">第一节：</font></span>
@@ -270,7 +270,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第六画卷</h3>
+						<h3>第六卷</h3>
 						<dl>
 							<dt>
 								<span class="high"><font font-size="30px">第一节：</font></span>
@@ -314,7 +314,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第七画卷</h3>
+						<h3>第七卷</h3>
 						<dl>
 							<dt>
 								<span class="high"><font font-size="30px">第一节：</font></span>
@@ -358,7 +358,7 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第八画卷</h3>
+						<h3>第八卷</h3>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -367,42 +367,42 @@
 					</div>
 
 					<div class="tabContent">
-						<h3>第九画卷</h3>
+						<h3>第九卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十画卷</h3>
+						<h3>第十卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十一画卷</h3>
+						<h3>第十一卷</h3>
 					</div>
 					<div class="tabContent">
-						<h3>第十二画卷</h3>
+						<h3>第十二卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十三画卷</h3>
+						<h3>第十三卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十四画卷</h3>
+						<h3>第十四卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十五画卷</h3>
+						<h3>第十五卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十六画卷</h3>
+						<h3>第十六卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十七画卷</h3>
+						<h3>第十七卷</h3>
 
 					</div>
 					<div class="tabContent">
-						<h3>第十八画卷</h3>
+						<h3>第十八卷</h3>
 
 					</div>
 				</div>

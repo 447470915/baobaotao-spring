@@ -18,43 +18,46 @@
 	background: white;
 }
 </style>
-<body style="background: #f0f0f0;">
-	<div id="login_div_id" class="block">
-		<table width="100%" height="100%">
-			<tr>
-				<td>
-					<div id="login_container" style="width: 60%; margin: auto;">
-						<center>
-							<font size="80px">注册</font>
-						</center>
-						<br> <br> <br> <br>
-						<form action="<c:url value="registerProcess.create"/>"
-							onsubmit="return checkPasswords()" method="post">
-							<font size="60px">用户名：</font> <br> <input id="userName_id"
-								style="height: 80px; width: 99%; font-size: 40px" type="text"
-								placeholder="电话/邮箱/其他" name="userName"> <br> <br>
-							<br> <font size="60px">设置密码：</font> <br> <input
-								id="firstPassword"
-								style="height: 80px; width: 99%; font-size: 40px"
-								type="password" name="password"> <br> <br> <br>
-							<font size="60px">确认密码：</font> <br> <input
-								id="secondPassword"
-								style="height: 80px; width: 99%; font-size: 40px"
-								type="password" name="confirmPassword"> <br> <br>
-							<br> <br> <br> <br> <input
-								style="height: 100px; width: 100%; background: orange; font-size: 50px"
-								type="submit" value="注册" />
-						</form>
-						<font id="checkPasswordWarning_id" color="red" size="80px"></font>
-						<!--用来提示两次密码的合法性  -->
-						<c:if test="${!empty error}">
-							<font color="red" size="80px"><c:out value="错误信息：${error}" /></font>
-						</c:if>
-					</div>
+<body>
+	<div style="background: #f0f0f0;">
+		<div id="login_div_id" class="block">
+			<table width="100%" height="100%">
+				<tr>
+					<td>
+						<div id="login_container" style="width: 60%; margin: auto;">
+							<center>
+								<font size="80px">注册</font>
+							</center>
+							<br> <br> <br> <br>
+							<form action="<c:url value="registerProcess.create"/>"
+								onsubmit="return checkPasswords()" method="post">
+								<font size="60px">用户名：</font> <br> <input id="userName_id"
+									style="height: 80px; width: 99%; font-size: 40px" type="text"
+									placeholder="电话/邮箱/其他" name="userName"> <br> <br>
+								<br> <font size="60px">设置密码：</font> <br> <input
+									id="firstPassword"
+									style="height: 80px; width: 99%; font-size: 40px"
+									type="password" name="password"> <br> <br> <br>
+								<font size="60px">确认密码：</font> <br> <input
+									id="secondPassword"
+									style="height: 80px; width: 99%; font-size: 40px"
+									type="password" name="confirmPassword"> <br> <br>
+								<br> <br> <br> <br> <input
+									style="height: 100px; width: 100%; background: orange; font-size: 50px"
+									type="submit" value="注册" />
+							</form>
+							<font id="checkPasswordWarning_id" color="red" size="80px"></font>
+							<!--用来提示两次密码的合法性  -->
+							<c:if test="${!empty error}">
+								<font color="red" size="80px"><c:out
+										value="错误信息：${error}" /></font>
+							</c:if>
+						</div>
 
-				</td>
-			</tr>
-		</table>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 
 

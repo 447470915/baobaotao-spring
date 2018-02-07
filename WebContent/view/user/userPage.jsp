@@ -28,40 +28,36 @@ Div {
 
 	<!---------------------下沉目录 ----------------------- -->
 	<div id="second"
-		style="border-style: solid none none none; border-width: 3px 0px 0px 0px; border-color: #e2e2e2">
-		<div style="width: 25%; float: left; font-size: 20px;">
+		style="border-style: none none none none;">
+		<div style="width: 25%; float: left; font-size: 20px;" onclick="location.href='../../index.jsp'">
 			<center>
 				<div>
-					<a href="../../index.jsp"> <img id="home"
+					<img id="home"
 						src="../../images/catalog/home_nofoc.png" />
-					</a>
 				</div>
 			</center>
 		</div>
-		<div style="width: 25%; float: left; font-size: 20px;">
+		<div style="width: 25%; float: left; font-size: 20px;" onclick="location.href='../catalogIndex/catalogPage.jsp'">
 			<center>
 				<div>
-					<a href="../catalogIndex/catalogPage.jsp"> <img id="kind_nofoc"
+					<img id="kind_nofoc"
 						src="../../images/catalog/kind_nofoc.png" />
-					</a>
 				</div>
 			</center>
 		</div>
-		<div style="width: 25%; float: left; font-size: 20px;">
+		<div style="width: 25%; float: left; font-size: 20px;" onclick="location.href='../find/findPage.jsp'">
 			<center>
 				<div>
-					<a href="../find/findPage.jsp"> <img id="find"
+					<img id="find"
 						src="../../images/catalog/find_nofoc.png" />
-					</a>
 				</div>
 			</center>
 		</div>
-		<div style="width: 25%; float: left; font-size: 25px;">
+		<div style="width: 25%; float: left; font-size: 25px;" onclick="location.href='userPage.jsp'">
 			<center>
 				<div>
-					<a href="userPage.jsp"> <img id="my"
+					<img id="my"
 						src="../../images/catalog/my.png" />
-					</a>
 				</div>
 			</center>
 		</div>

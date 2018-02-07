@@ -22,7 +22,7 @@ Div {
 <body onload="get_ie_wh()">
 
 	<div id="container"
-		style="width: 100%; height: 10000px; background: #f2f2f2;overflow:auto">
+		style="width: 100%; height: 10000px; background: #ffffff;overflow:auto">
 
 		<%@ include file = "frameList.jsp" %>
 	
@@ -30,40 +30,36 @@ Div {
 
 	<!---------------------下沉目录 ----------------------- -->
 	<div id="second"
-		style="border-style: solid none none none; border-width: 3px 0px 0px 0px; border-color: #e2e2e2">
-		<div style="width: 25%; float: left; font-size: 20px;">
+		style="border-style: solid none none none;border-color: #e2e2e2;">
+		<div style="width: 25%; float: left; font-size: 20px;" onclick="location.href='../../index.jsp'">
 			<center>
 				<div>
-					<a href="../../index.jsp"> <img id="home"
+					<img id="home"
 						src="../../images/catalog/home_nofoc.png" />
-					</a>
 				</div>
 			</center>
 		</div>
-		<div style="width: 25%; float: left; font-size: 20px;">
+		<div style="width: 25%; float: left; font-size: 20px;" onclick="location.href='catalogPage.jsp'">
 			<center>
 				<div>
-					<a href="catalogPage.jsp"> <img id="kind"
+					<img id="kind"
 						src="../../images/catalog/kind.png" />
-					</a>
 				</div>
 			</center>
 		</div>
-		<div style="width: 25%; float: left; font-size: 20px;">
+		<div style="width: 25%; float: left; font-size: 20px;" onclick="location.href='../find/findPage.jsp'">
 			<center>
 				<div>
-					<a href="../find/findPage.jsp"> <img id="find"
+					<img id="find"
 						src="../../images/catalog/find_nofoc.png" />
-					</a>
 				</div>
 			</center>
 		</div>
-		<div style="width: 25%; float: left; font-size: 25px;">
+		<div style="width: 25%; float: left; font-size: 25px;" onclick="location.href='../../view/user/my_login_register.create'">
 			<center>
 				<div>
-					<a href="../../view/user/my_login_register.create"> <img id="my"
+					<img id="my"
 						src="../../images/catalog/my_nofoc.png" />
-					</a>
 				</div>
 			</center>
 		</div>

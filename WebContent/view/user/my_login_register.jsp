@@ -17,43 +17,40 @@
 	background: white;
 }
 </style>
-<body style="background: #f0f0f0;">
-	<div id="login_div_id" class="block">
-		<table width="100%" height="100%">
-			<tr>
-				<td>
-					<div id="login_bt_id"
-						style="width: 150px; height: 150px; margin: auto;">
-						<a href="login.create"><img src="image/login_img.png"
-							style="max-width: 100%; max-height: 100%" /> </a>
-					</div> <br>
-				<br>
-				<br>
-					<div>
-						<font size="8px"><center>登陆</center></font>
-					</div>
-				</td>
-			</tr>
-		</table>
+<body>
+	<div style="background: #f0f0f0;">
+		<div id="login_div_id" class="block">
+			<table width="100%" height="100%">
+				<tr>
+					<td>
+						<div id="login_bt_id"
+							style="width: 150px; height: 150px; margin: auto;">
+							<a href="login.create"><img src="image/login_img.png"
+								style="max-width: 100%; max-height: 100%" /> </a>
+						</div> <br> <br> <br>
+						<div>
+							<font size="8px"><center>登陆</center></font>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="register_div_id" class="block">
+			<table width="100%" height="100%">
+				<tr>
+					<td>
+						<div id="login_bt_id"
+							style="width: 150px; height: 150px; margin: auto;">
+							<a href="register.create"><img src="image/register_img.png"
+								style="max-width: 100%; max-height: 100%" /></a>
+						</div> <br> <br> <br>
+						<div>
+							<font size="8px"><center>注册</center></font>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
-	<div id="register_div_id" class="block">
-		<table width="100%" height="100%">
-			<tr>
-				<td>
-					<div id="login_bt_id"
-						style="width: 150px; height: 150px; margin: auto;">
-						<a href="register.create"><img src="image/register_img.png"
-							style="max-width: 100%; max-height: 100%" /></a>
-					</div> <br>
-				<br>
-				<br>
-					<div>
-						<font size="8px"><center>注册</center></font>
-					</div>
-				</td>
-			</tr>
-		</table>
-	</div>
-
 </body>
 </html>
