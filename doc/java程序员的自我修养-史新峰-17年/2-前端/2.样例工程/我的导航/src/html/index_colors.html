@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html charset=utf-8" />
+<style>
+body{
+	background:#ffffff;
+}
+.edit_zone {
+	width:80%;
+	margin:0 auto;	
+}
+.main_zone{
+	width:80%;
+	margin:0 auto;
+	border-style:dashed;
+	border-width:thin;
+}
+
+.hand{
+	cursor:pointer;
+}
+.noshow{
+	display:none;
+}
+.show{
+	display:true;
+}
+.link_outline{
+	width:14.5%;
+	height:150px;
+	font-size:20px;
+	float:left;
+	margin-left:1.85%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.bgcolor_addbutton{
+	background:#efa500;
+}
+.clean_float{
+	clear:both;	
+}
+.backimg0{
+	background:#f7d19f;
+}
+.backimg1{
+	background:#e078de;
+}
+.backimg2{
+	background:orange;
+}
+.backimg3{
+	background:yellow;
+}
+a{
+	text-decoration:none;
+}
+</style>
+</head>
+<body onload="parseXml();">
+	<center>
+		<h2 style="font-size: 50px">
+			<font color="red"> 我的导航</font>
+		</h2>
+	</center>
+	
+	<div id="baidu" style="width:80%;margin:0 auto;">
+		<form action="http://www.baidu.com/s" method="get">
+			<input type="text" name="wd"></input>
+			<input type="submit" value="百度一下"></input>
+		</form>
+	</div>
+	
+	<div id ="edit_id" class="edit_zone" align="right">
+		<label id = "edit_label_id" class="hand" onclick="editEvent()">
+			<font size="2px" color="blue">编辑</font>
+		</label>
+	</div>
+	
+	<div id="cancel_theme_id" class="edit_zone noshow" align="right">
+		<select id="theme_select_id">
+			<option id="theme_op_0" value="select_theme">主题</option>
+			<option id="theme_op_1" value="colors" onclick="changeTheme(1)">方块阵</option><!--changeTheme函数不能直接把字符串传递出去  -->
+			<option id="theme_op_2" value="ocean" onclick="changeTheme(2)">海之蓝</option>
+			<option id="theme_op_3" value="defined-byuser" onclick="changeTheme(3)">自定义</option>
+		</select>
+		<label id="cancel_label_id" class="hand" onclick="cancelEvent()">
+			<font size="2px" color="blue">取消</font>
+		</label>
+	</div>
+	
+	<div id="parent_id" class="main_zone">
+		<div id="add_button_div_id" class="link_outline bgcolor_addbutton noshow hand"
+			onclick="addOneEvent()">
+			<table width="100%" height="100%">
+				<td width="50%">
+					<center>
+						<font size="50px" color="red">+</font>
+					</center>
+				</td>
+			</table>
+		</div>
+	<div id="clean_id" class="clean_float"></div>
+	</div>
+</body>
+<script>
+	var xmlDoc=null;
+	var root=null;
+	var theme="index_colors.html";
+	var thisFileName="index_colors.html";
+	var totalNum;
+	
+	function parseXml(){
+		//获取浏览器对象
+		try{
+			xmlDoc=new ActiveXObject("Microsoft.XMLDOM");//ie11支持这种玩法，最新的edge不支持待解决
+		}catch(e){
+			try{
+				xmlDoc=document.implementation.createDocument("","",null);//其他浏览器
+			}catch(e){
+				alert("建议使用IE11及以上浏览器，其他浏览器可能发生异常情况");
+				return;
+			}
+		}
+		xmlDoc.async=false;
+		//读取文件
+		try{
+			xmlDoc.load("../data/data.xml");
+		}catch(e){
+			alert("请用IE11及以上浏览器，如果已是IE浏览器则data.xml文件丢失。");
+		}
+		root=xmlDoc.documentElement;
+		//读取<currentTheme>节点内容
+		theme=xmlDoc.getElementsByTagName("currentTheme")[0].text;
+		if(thisFileName!=theme){
+			window.location.href=theme;
+			return;
+		}
+		//读取<totalNum>		
+		totalNum=xmlDoc.getElementsByTagName("totalNum")[0].text;
+		
+		//遍历这个data.xml文件
+		for(var i=2;i<root.childNodes.length;i++){
+			var webName=root.childNodes[i].childNodes[0].text;
+			var webAddr=root.childNodes[i].childNodes[1].text;
+			if("http"!=webAddr.substr(0,4)){
+				webAddr="http://"+webAddr;
+			}
+
+			//x
+			var close_text=document.createTextNode("×");
+			var x_font_tag=document.createElement("font");
+			x_font_tag.color="red";
+			x_font_tag.size="2px";
+			x_font_tag.appendChild(close_text);
+			var close_div=document.createElement("div");
+			close_div.id="element_"+i;
+ 			close_div.onclick=function(){
+ 				deleleEvent("element_"+i);
+			} 
+			close_div.className="hand noshow";
+			close_div.appendChild(x_font_tag);
+			
+			//链接
+			var link_text=document.createTextNode(webName);
+			var link_font_tag=document.createElement("font");
+			link_font_tag.color="purple";
+			link_font_tag.appendChild(link_text);
+			var link_center_tag=document.createElement("center");
+			link_center_tag.appendChild(link_font_tag);
+			var link_td_tag=document.createElement("td");
+			link_td_tag.appendChild(link_center_tag);
+			var link_tr_tag=document.createElement("tr");
+			link_tr_tag.appendChild(link_td_tag);
+			var link_table_tag=document.createElement("table");
+			link_table_tag.height="100%";
+			link_table_tag.width="100%";
+			link_table_tag.appendChild(link_tr_tag);
+			var link_a_tag=document.createElement("a");
+			link_a_tag.href=webAddr;
+			link_a_tag.appendChild(link_table_tag);
+			
+			//背景
+			var color_div=document.createElement("div");
+			var pic_num=i%4;
+			var pic_str="backimg"+pic_num;
+			color_div.className="link_outline "+pic_str;
+			color_div.appendChild(close_div);
+			color_div.appendChild(link_a_tag);
+			
+			//插到x前面
+			var parent=document.getElementById("parent_id");
+			var childAdd=document.getElementById("add_button_div_id");
+			parent.insertBefore(color_div,childAdd);
+		}
+	}
+	
+	function editEvent(){
+		document.getElementById("edit_label_id").className="noshow";
+		document.getElementById("cancel_theme_id").className="edit_zone show";
+		document.getElementById("add_button_div_id").className="link_outline bgcolor_addbutton show hand";
+	
+		for(var i=2;i<root.childNodes.length;i++){
+			document.getElementById("element_"+i).className="hand show";
+		}
+	}
+	function cancelEvent(){
+		history.go(0);
+	}
+	function changeTheme(themeVar){
+		if("1"==themeVar){
+			window.location.href="index_colors.html";
+			xmlDoc.getElementsByTagName("currentTheme")[0].text="index_colors.html";
+		}else if ("2"==themeVar){
+			window.location.href="index_ocean.html";
+			xmlDoc.getElementsByTagName("currentTheme")[0].text="index_ocean.html";
+		}else if ("3"==themeVar){
+			window.location.href="index_dogs.html";
+			xmlDoc.getElementsByTagName("currentTheme")[0].text="index_dogs.html";
+		}else{
+			window.location.href="index_colors.html";
+			xmlDoc.getElementsByTagName("currentTheme")[0].text="index_colors.html";
+		}
+		
+		saveData();
+	}
+	function addOneEvent(){
+		var webName=null;
+		var webAddr=null;
+		
+		webName=prompt("请输入网站的中文名字：","");
+		webAddr=prompt("请输入网址","");
+		
+		if(webName==null||webAddr==null||webName==""||webAddr==""){
+			alert("名字或是网址没有填写，添加失败！");
+			return;
+		}
+		
+		totalNum=parseInt(totalNum)+1;
+		var webName_content=xmlDoc.createTextNode(webName);
+		var name_tag=xmlDoc.createElement("name");
+		name_tag.appendChild(webName_content);
+		
+		var webAddr_content=xmlDoc.createTextNode(webAddr);
+		var addr_tag=xmlDoc.createElement("addr");
+		addr_tag.appendChild(webAddr_content);
+		
+		var element_tag=xmlDoc.createElement("element_"+totalNum);
+		element_tag.appendChild(name_tag);
+		element_tag.appendChild(addr_tag);
+		
+		xmlDoc.documentElement.appendChild(element_tag);
+		xmlDoc.getElementsByTagName("totalNum")[0].text=totalNum;
+		
+		saveData();
+		
+		history.go(0);
+		return;
+	}
+	function deleleEvent(div_id){
+		
+		var deleteNode=xmlDoc.getElementsByTagName(div_id)[0];
+		xmlDoc.documentElement.removeChild(deleteNode);
+		
+		if(totalNum==null){
+			totalNum=xmlDoc.getElementsByTagName("totalNum")[0].text;
+		}
+		totalNum=parseInt(totalNum)-1;
+		xmlDoc.getElementsByTagName("totalNum")[0].text=totalNum;
+		
+		saveData();
+		
+		history.go(0);
+		return;
+	}
+	function saveData(){
+		var contentText=xmlDoc.xml;
+		try{
+			var fso=new ActiveXObject("Scripting.FileSystemObject");
+			var path=location.href;
+			path=path.substring(8,path.indexOf("html"));
+			path+="data/data.xml";
+			var file=fso.CreateTextFile(path,"true","true");
+			
+			file.Write(contentText);
+			file.Close();
+		}catch(e){
+			alert("要点是哦，否则没办法将你的改变保存到本地~");
+		}
+	}
+</script>
+</html>

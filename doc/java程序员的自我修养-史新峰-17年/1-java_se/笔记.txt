@@ -1,0 +1,2 @@
+win7默认编码是GBK；
+Linux默认编码是UTF-8；

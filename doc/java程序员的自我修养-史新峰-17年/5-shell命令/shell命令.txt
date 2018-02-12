@@ -1,0 +1,5 @@
+【端口占用情况】
+win10(应该是)查端口使用情况cmd指令：
+1-netstat -ano|findstr "xxx";
+2-tasklist|findstr "pid";
+3-taskkill /f/t/im xxx.exe;

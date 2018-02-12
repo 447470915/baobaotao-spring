@@ -1,0 +1,23 @@
+【mysql安装】
+	mysql下载archive包；
+	拷贝my-default.ini到当前目录，并重命名为：my.ini；
+	配置my.ini中的：
+		basedir = D:\\program\\mysql-5.7.15-winx64
+		datadir = D:\\program\\mysql-5.7.15-winx64\\data
+		#自己定义的临时路径，解决安装问题
+		tmpdir="D:\\program\\mysql-5.7.15-winx64\\temp\\"
+	初始化data，是为了初始化系统表等：bin->mysqld --defaults-file=my.ini --initialize
+	如果发生问题的话：删除data文件费夹下的ib_logfile0和ib_logfile1，并重新启动数据库。
+
+
+【修改密码】：set password for 'root'@'localhost' = psassword('password')
+【启动服务器】：mysqld
+【登陆】：mysql -u root -p
+【mysql密码】：1
+【显示所有库】：show databases
+【engine=innodb】：mysql默认引擎是myisam（不支持事物），innodb引擎支持事务。对于一般网站而言，使用myisam就够了。
+
+
+mysql使用语句：=============================================================================
+【查询系统时间】
+	select sysdate();转化为字符串发为;select data_formate(sysdate(),'%y%m%d%h%i%s');
