@@ -1093,3 +1093,82 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 6; ≤ª‘ –
 2018-02-07 23:02:28,419 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Wed Feb 07 23:02:27 CST 2018]; parent: Root WebApplicationContext
 2018-02-07 23:02:28,576 INFO  servlet.DispatcherServlet - FrameworkServlet 'spring': initialization completed in 769 ms
 2018-02-07 23:09:48,067 INFO  system-logger - sys”√ªß: ∑–¬∑Â£¨ π”√√‹¬Î£∫q≤È—Ø“ª¥Œ.
+2018-02-12 11:47:48,845 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-02-12 11:47:49,064 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Mon Feb 12 11:47:49 CST 2018]; root of context hierarchy
+2018-02-12 11:47:49,157 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-app-context.xml]
+2018-02-12 11:47:49,877 WARN  mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[zmapper]' package. Please check your configuration.
+2018-02-12 11:47:51,471 WARN  support.XmlWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring-app-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\javaee_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\basic-create-project\WEB-INF\classes\zmapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user.domain.dbin.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+2018-02-12 11:47:51,476 ERROR context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring-app-context.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\javaee_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\basic-create-project\WEB-INF\classes\zmapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user.domain.dbin.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4842)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5303)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1407)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1397)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\javaee_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\basic-create-project\WEB-INF\classes\zmapper\user\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user.domain.dbin.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user.domain.dbin.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 24 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user.domain.dbin.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 26 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user.domain.dbin.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 30 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: user.domain.dbin.User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 32 more
+2018-02-12 11:49:34,742 INFO  context.ContextLoader - Root WebApplicationContext: initialization started
+2018-02-12 11:49:34,966 INFO  support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Mon Feb 12 11:49:34 CST 2018]; root of context hierarchy
+2018-02-12 11:49:35,059 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-app-context.xml]
+2018-02-12 11:49:36,908 INFO  context.ContextLoader - Root WebApplicationContext: initialization completed in 2165 ms
+2018-02-12 11:49:36,935 INFO  servlet.DispatcherServlet - FrameworkServlet 'spring': initialization started
+2018-02-12 11:49:36,938 INFO  support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Mon Feb 12 11:49:36 CST 2018]; parent: Root WebApplicationContext
+2018-02-12 11:49:36,939 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2018-02-12 11:49:37,402 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/test.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.test(javax.servlet.http.HttpServletRequest)
+2018-02-12 11:49:37,404 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/view/user/login.create]}" onto public java.lang.String user.web.LoginController.loginPage()
+2018-02-12 11:49:37,405 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/view/user/my_login_register.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.my_login_register(javax.servlet.http.HttpServletRequest)
+2018-02-12 11:49:37,405 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/view/user/register.create]}" onto public java.lang.String user.web.LoginController.registerPage()
+2018-02-12 11:49:37,405 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/view/user/registerProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.registerProcess(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-02-12 11:49:37,406 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/getHomePage.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.getHomePage(javax.servlet.http.HttpServletRequest)
+2018-02-12 11:49:37,406 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/view/user/loginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.LoginController.loginCheck(javax.servlet.http.HttpServletRequest,user.domain.input.LoginInput)
+2018-02-12 11:49:37,407 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLogin.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginPage()
+2018-02-12 11:49:37,407 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantLoginCheck.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.loginCheck(javax.servlet.http.HttpServletRequest)
+2018-02-12 11:49:37,407 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegister.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.rigsterPage()
+2018-02-12 11:49:37,408 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantRegisterProcess.create]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.tenantRegiter(javax.servlet.http.HttpServletRequest)
+2018-02-12 11:49:37,408 INFO  annotation.RequestMappingHandlerMapping - Mapped "{[/tenantUploadFile.create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView user.web.TenantLoginController.upLoadFile(javax.servlet.http.HttpServletRequest)
+2018-02-12 11:49:37,594 INFO  annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Mon Feb 12 11:49:36 CST 2018]; parent: Root WebApplicationContext
+2018-02-12 11:49:37,796 INFO  servlet.DispatcherServlet - FrameworkServlet 'spring': initialization completed in 861 ms
