@@ -28,7 +28,7 @@
    <appender name="daily-log"  
 		class="org.apache.log4j.DailyRollingFileAppender">  
 	<!--配置日志路径  -->
-     <param name="File" value="D:/javaee_workspace/baobaotao-spring/log/daily-log/daily.log" />  
+     <param name="File" value="D:/javaee_workspace/basic-create-project/log/daily-log/daily.log" />  
      <param name="encoding" value="gbk" />
      <param name="BufferedIO" value="false" />  
      <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />  
