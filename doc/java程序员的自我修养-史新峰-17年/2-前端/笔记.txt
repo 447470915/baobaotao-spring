@@ -1,3 +1,0 @@
-1.用dom做注入onclick时，回调函数‘i’一致问题，要注意！
-2.html中的 <!DOCTYPE html PUBLIC "-//W3C//DTD H……
-	标注本页面的html服从的标准，不能缺，否则同样的内容可能表达出不同的效果，踩过的坑啊。
