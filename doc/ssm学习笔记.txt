@@ -10,7 +10,8 @@
 	还是没办法根本上解决这个问题；
 	
 三、spring的bean作用域：
-	1.单例模式（默认）；
-	2.原型模式-prototype；
+	1.单例模式（默认）；		--经验证从controller就开始单例了，故后面的引用到的类都是一份的；
+	2.原型模式-prototype；	--经验证可使用@Scope("prototype")来变成原型，但在spring的web应用中没必要这样用，因为从
+						  cotroller就开始单例了
 	3.requst；
 	4.session；
