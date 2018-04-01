@@ -1,0 +1,16 @@
+一、spring启动顺序：
+	1.web启动顺序，先读取web.xml文件内容，执行里面的步骤先后顺序是：context-param--》listener--》filter--》sevlet；
+	2.由1可以推测spring和springMVC的启动顺序是：先读取<context-param>标签下指定的spring-context.xml上下文配置文件，
+	形成相应的键值对添加到SevletContext供整个项目共享。接下来执行ContextLoaderListener，获取到spring对应的context并
+	进行初始化形成对应的bean们。当客户端请求过来后，先执行filter，然后由DispatcherSevlet进行路由。
+
+二、处理自动装高配的歧义性方式：
+	1.使用primary把某个bean标注为首选项，但是同样可以设置多个primary的bean，所以该方法没有彻底解决歧义性；
+	2.使用qualifier给被装配bean重新制定id，调用时给装配类制定想要装配的bean的id，但依然可以给被装配的多个bean指定同一个id，
+	还是没办法根本上解决这个问题；
+	
+三、spring的bean作用域：
+	1.单例模式（默认）；
+	2.原型模式-prototype；
+	3.requst；
+	4.session；
